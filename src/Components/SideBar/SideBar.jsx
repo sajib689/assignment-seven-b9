@@ -8,10 +8,11 @@ const SideBar = ({ cooks,handlePreparing,prepared }) => {
     const totalCalories = caloriesMap.reduce((a,b) => a+b,0)
     
   return (
-    <div className="mt-20 border rounded-lg md:w-[450px]">
-      <h1 className="text-center mt-3 font-bold text-[#282828] text-[24px]">
+    <div className="mt-20 border rounded-lg w-[380px] md:w-[450px]">
+      <h1 className="text-center mt-3 mb-3 font-bold text-[#282828] text-[24px]">
         Want to cook: {cooks.length - prepared.length}
       </h1>
+      <hr />
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
