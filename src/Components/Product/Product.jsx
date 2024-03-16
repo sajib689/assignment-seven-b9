@@ -17,11 +17,11 @@ const Product = ({ recipe,handleCook }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{recipe_name}</h2>
-        <p>{description}</p>
-        <p>Ingredients: {ingredients.length}</p>
+        <p className="text-[#878787]">{description}</p>
+        <p className="text-[18px]">Ingredients: {ingredients.length}</p>
         <ul className="list-disc ms-2">
           {ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
+            <li className="text-[#878787] text-[16px]" key={index}>{ingredient}</li>
           ))}
         </ul>
         <div className="flex items-center">
