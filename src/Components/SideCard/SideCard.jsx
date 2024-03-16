@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 
 const SideCard = ({cook,index,handlePreparing}) => {
@@ -7,17 +8,23 @@ const SideCard = ({cook,index,handlePreparing}) => {
         calories,
       } = cook;
 
-
-
+const [isHidden, setHidden] = useState(false)
+const handleClick = () => {
+    handlePreparing(cook)
+    setHidden(true)
+}
     return (
         <>
-           <tr>
+           {
+            !isHidden && 
+            <tr>
               <th>{index+1}</th>
               <td>{recipe_name}</td>
               <td>{preparing_time}</td>
               <td>{calories}</td>
-              <td><button onClick={() => handlePreparing(cook)} className="btn bg-[#0BE58A] border-0">Preparing</button></td>
+              <td><button onClick={handleClick} className="btn bg-[#0BE58A] border-0">Preparing</button></td>
             </tr> 
+           }
         </>
     );
 };
