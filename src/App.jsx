@@ -15,6 +15,7 @@ function App() {
     if (!exitings) {
       const newCoookings = [...cooks, cook];
       setCooks(newCoookings);
+      toast.success('Recipe added success!')
     } else {
       toast.error("Already selected.");
     }
