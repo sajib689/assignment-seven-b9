@@ -9,7 +9,7 @@ import toast, { Toaster } from "react-hot-toast"
 
 function App() {
   const [cooks, setCooks] = useState([])
- 
+ const [prepared, setPrepared] = useState([])
   const handleCook = cook => {
     const exitings = cooks.find((match) => match.recipe_id ===cook.recipe_id)
     if(!exitings) {
@@ -22,7 +22,14 @@ function App() {
     
   }
   const handlePreparing = prepare => {
-    console.log("Preparing", prepare)
+    const exitings = cooks.find((match) => match.recipe_id === prepare.recipe_id)
+    if(!exitings) {
+      const newCoookings = [...prepared, prepare]
+      setPrepared(newCoookings)
+    } else{
+      toast.error("Already Prepared.")
+
+    }
   }
   return (
     <div className="container mx-auto">
@@ -37,7 +44,7 @@ function App() {
      <Title></Title>
      <div className="md:flex gap-5">
       <Products handleCook={handleCook}></Products>
-      <SideBar cooks={cooks} handlePreparing={handlePreparing}></SideBar>
+      <SideBar cooks={cooks} prepared={prepared} handlePreparing={handlePreparing}></SideBar>
      </div>
     </div>
   )

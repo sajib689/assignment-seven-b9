@@ -1,6 +1,6 @@
 import SideCard from "../SideCard/SideCard";
 
-const SideBar = ({ cooks,handlePreparing }) => {
+const SideBar = ({ cooks,handlePreparing,prepared }) => {
   return (
     <div className="mt-20 border rounded-lg md:w-[450px]">
       <h1 className="text-center mt-3 font-bold text-[#282828] text-[24px]">
@@ -26,6 +26,7 @@ const SideBar = ({ cooks,handlePreparing }) => {
           </tbody>
         </table>
         <hr />
+
       </div>
     </div>
   );
