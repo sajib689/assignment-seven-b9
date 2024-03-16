@@ -4,16 +4,30 @@ import Navbar from "./Components/Navbar/Navbar"
 import Products from "./Components/Products/Products"
 import SideBar from "./Components/SideBar/SideBar"
 import Title from "./Components/Title/Title"
+import toast, { Toaster } from "react-hot-toast"
 
 
 function App() {
   const [cooks, setCooks] = useState([])
   const handleCook = cook => {
-    const newCoookings = [...cooks, cook]
+    const exitings = cooks.find((match) => match.recipe_id ===cook.recipe_id)
+    if(!exitings) {
+      const newCoookings = [...cooks, cook]
     setCooks(newCoookings)
+    } else{
+      toast.error("Already selected.")
+
+    }
+    
   }
   return (
     <div className="container mx-auto">
+      <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
+
+
      <Navbar></Navbar>
      <Banner></Banner>
      <Title></Title>
