@@ -1,4 +1,4 @@
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle,FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -60,6 +60,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end ">
+      <label className="me-4 input rounded-full input-bordered flex items-center gap-2">
+      <FaSearch />
+  <input type="text" className="grow  focus:outline-none" placeholder="Search" />
+</label>
       <FaRegUserCircle className="text-2xl  rounded-full bg-[#0BE58A]"/>
       </div>
     </div>
