@@ -13,7 +13,7 @@ const Product = ({ recipe,handleCook }) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
       <figure>
-        <img className="h-[200px] rounded-lg" src={recipe_image} alt="Shoes" />
+        <img className="h-[200px] w-full rounded-lg" src={recipe_image} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{recipe_name}</h2>
