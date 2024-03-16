@@ -2,6 +2,8 @@ import PrepareCard from "../PrepareCard/PrepareCard";
 import SideCard from "../SideCard/SideCard";
 
 const SideBar = ({ cooks,handlePreparing,prepared }) => {
+    const costMap = prepared.map(cost => {return cost.preparing_time})
+    const totalTime = costMap.reduce((a,b) => a+b,0)
   return (
     <div className="mt-20 border rounded-lg md:w-[450px]">
       <h1 className="text-center mt-3 font-bold text-[#282828] text-[24px]">
@@ -40,9 +42,14 @@ const SideBar = ({ cooks,handlePreparing,prepared }) => {
           </thead>
           <tbody>
            {
-            prepared.map((prepare,index) => <PrepareCard key={prepare.recipe_id} index={index} prepare={prepare}></PrepareCard>)
+            prepared.map((prepare,index) => <PrepareCard key={prepare.recipe_id}  index={index} prepare={prepare}></PrepareCard>)
            }
-            
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Total Time = {totalTime} minutes</td>
+                <td>Total Time = {totalTime}</td>
+            </tr>
           </tbody>
         </table>
         <hr />

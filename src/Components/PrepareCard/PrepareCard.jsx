@@ -1,5 +1,6 @@
 
 const PrepareCard = ({prepare,index}) => {
+  
     const {
         recipe_name,
         preparing_time,

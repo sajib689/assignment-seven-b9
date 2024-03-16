@@ -5,7 +5,7 @@
       "recipe_name": "Lemon Garlic Chicken",
       "description": "A delicious and tangy chicken dish infused with the flavors of lemon and garlic.",
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
-      "preparing_time": "30 minutes",
+      "preparing_time": 30,
       "calories": 350
     },
     {
@@ -14,7 +14,7 @@
       "recipe_name": "Creamy Mushroom Pasta",
       "description": "Indulge in a rich and creamy pasta dish with tender mushrooms and savory sauce.",
       "ingredients": ["300 g pasta", "200 g mushrooms", "100 ml heavy cream", "50 g grated Parmesan cheese"],
-      "preparing_time": "25 minutes",
+      "preparing_time": 25,
       "calories": 420
     },
     {
@@ -23,7 +23,7 @@
       "recipe_name": "Vegetable Stir Fry",
       "description": "A colorful and nutritious stir-fry packed with assorted vegetables and flavorful sauce.",
       "ingredients": ["400 g mixed vegetables (bell peppers, broccoli, carrots, etc.)", "150 g tofu", "100 ml soy sauce", "50 ml sesame oil"],
-      "preparing_time": "20 minutes",
+      "preparing_time": 20,
       "calories": 280
     },
     {
@@ -32,7 +32,7 @@
       "recipe_name": "Greek Salad",
       "description": "Enjoy the fresh and vibrant flavors of Greece with this classic salad featuring tomatoes, cucumbers, olives, and feta cheese.",
       "ingredients": ["2 large tomatoes", "1 cucumber", "100 g Kalamata olives", "100 g feta cheese", "50 ml olive oil", "20 ml red wine vinegar"],
-      "preparing_time": "15 minutes",
+      "preparing_time": 15,
       "calories": 180
     },
     {
@@ -41,7 +41,7 @@
       "recipe_name": "Banana Smoothie",
       "description": "Start your day right with a refreshing and nutritious banana smoothie packed with vitamins and minerals.",
       "ingredients": ["2 ripe bananas", "200 ml milk (or almond milk for a dairy-free option)", "50 g oats", "1 tbsp honey", "1/2 tsp cinnamon"],
-      "preparing_time": "10 minutes",
+      "preparing_time": 10,
       "calories": 220
     },
     {
@@ -50,7 +50,7 @@
       "recipe_name": "Caprese Salad",
       "description": "Savor the simplicity of Italian cuisine with this classic Caprese salad featuring fresh tomatoes, basil, and mozzarella cheese.",
       "ingredients": ["3 large tomatoes", "150 g fresh mozzarella cheese", "50 g fresh basil leaves", "30 ml balsamic vinegar", "20 ml extra virgin olive oil"],
-      "preparing_time": "12 minutes",
+      "preparing_time": 12,
       "calories": 250
     }
   ]
