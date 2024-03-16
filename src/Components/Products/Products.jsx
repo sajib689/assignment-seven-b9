@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "./../Product/Product";
 
-const Products = () => {
+const Products = ({handleCook}) => {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
     fetch("receipe.json")
@@ -11,7 +11,7 @@ const Products = () => {
   return (
     <div className="mt-20 grid grid-cols md:grid-cols-2 gap-5">
       {recipes.map((recipe) => (
-        <Product key={recipe.id} recipe={recipe}></Product>
+        <Product key={recipe.id} recipe={recipe} handleCook={handleCook}></Product>
       ))}
     </div>
   );

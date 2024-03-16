@@ -1,7 +1,7 @@
 import { CiStopwatch } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 
-const Product = ({ recipe }) => {
+const Product = ({ recipe,handleCook }) => {
   const {
     recipe_image,
     recipe_name,
@@ -27,7 +27,7 @@ const Product = ({ recipe }) => {
         <div className="flex items-center">
           <div className="flex items-center justify-center">
             <CiStopwatch />
-            <p>{preparing_time} minutes</p>
+            <p>{preparing_time}</p>
           </div>
           <div className="ms-20 flex items-center justify-center">
             <FaFire />
@@ -35,7 +35,7 @@ const Product = ({ recipe }) => {
           </div>
         </div>
         <div className="card-actions justify-start">
-          <button className="btn bg-[#0BE58A] text-[#150B2B]">Want to Cook</button>
+          <button onClick={() => handleCook(recipe)} className="btn bg-[#0BE58A] text-[#150B2B]">Want to Cook</button>
         </div>
       </div>
     </div>
