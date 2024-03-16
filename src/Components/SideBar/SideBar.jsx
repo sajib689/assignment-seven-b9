@@ -4,7 +4,7 @@ const SideBar = ({ cooks,handlePreparing,prepared }) => {
   return (
     <div className="mt-20 border rounded-lg md:w-[450px]">
       <h1 className="text-center mt-3 font-bold text-[#282828] text-[24px]">
-        Want to cook: {cooks.length}
+        Want to cook: {cooks.length - prepared.length}
       </h1>
       <div className="overflow-x-auto">
         <table className="table">
@@ -26,7 +26,7 @@ const SideBar = ({ cooks,handlePreparing,prepared }) => {
           </tbody>
         </table>
         <hr />
-
+            <h1 className="text-center mt-3 font-bold text-[#282828] text-[24px]">Currently cooking: {prepared.length}</h1>
       </div>
     </div>
   );

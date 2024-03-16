@@ -22,10 +22,10 @@ function App() {
     
   }
   const handlePreparing = prepare => {
-    const exitings = cooks.find((match) => match.recipe_id === prepare.recipe_id)
+    const exitings = prepared.find((match) => match.recipe_id === prepare.recipe_id)
     if(!exitings) {
-      const newCoookings = [...prepared, prepare]
-      setPrepared(newCoookings)
+      const newPrepared = [...prepared, prepare]
+      setPrepared(newPrepared)
     } else{
       toast.error("Already Prepared.")
 
