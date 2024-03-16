@@ -10,8 +10,8 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-60 rounded-lg"></div>
       <div className="hero-content rounded-lg text-center text-neutral-content">
         <div className="p-2">
-          <h1 className="mb-5 text-xl md:text-[52px] font-bold">
-            Discover an exceptional cooking <br /> class tailored for you!
+          <h1 className="mb-5 text-[40px] md:text-[52px] font-bold">
+            Discover an exceptional cooking  class <br /> tailored for you!
           </h1>
           <p className="mb-5">
             Discover your culinary passion with tailored cooking classes <br />{" "}
