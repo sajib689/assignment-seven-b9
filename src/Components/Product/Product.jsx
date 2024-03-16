@@ -29,7 +29,7 @@ const Product = ({ recipe,handleCook }) => {
             <CiStopwatch />
             <p>{preparing_time} minutes</p>
           </div>
-          <div className="ms-20 flex items-center justify-center">
+          <div className="ms-[50px] flex items-center justify-center">
             <FaFire />
             <p>{calories} calories</p>
           </div>
